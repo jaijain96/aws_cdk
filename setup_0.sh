@@ -1,9 +1,5 @@
-# cat /home/setup.sh
-
 # Download and install nvm:
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
-
-# wget https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh
 
 export NVM_DIR="$HOME/.nvm"
 
@@ -21,14 +17,4 @@ nvm current # Should print "v22.12.0".
 # Verify npm version:
 npm -v # Should print "10.9.0".
 
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 
-unzip awscliv2.zip
-
-./aws/install
-
-npm install -g aws-cdk
-
-cdk --version
-
-mkdir /root/.aws
